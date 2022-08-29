@@ -19,14 +19,19 @@ The state space has **37 dimensions** and contains the agent's velocity, along w
 
 The task is episodic, and in order to solve the environment, your agent must get an average score of **+13** over 100 consecutive episodes.
 
-## Installation and usage guide
+## Dependencies Installation and Usage Guide
 
-1. Prepare new Conda environment following guidelines on [Udacity DRL repo](https://github.com/udacity/deep-reinforcement-learning#dependencies) 
+1. Prepare new Conda environment (with python 3.6) following guidelines on [Udacity DRL repo](https://github.com/udacity/deep-reinforcement-learning#dependencies) 
 
 :warning: You may encounter PyTorch installation issues on Windows 10. Looks like required version of PyTorch must be installed using conda: `conda install pytorch=0.4.0 -c pytorch` before running `pip install` in Point 3.
 
+2. Install the `mlagents` package with:
 
-2. Download custom Banana environment (Unity ML-Agents env) prepared by Udacity
+```sh
+python -m pip install mlagents==0.28.0
+```
+
+3. Download custom Banana environment (Unity ML-Agents env) prepared by Udacity
 
 Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
 Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
@@ -42,6 +47,6 @@ For example on 64-bit Windows:
 env = UnityEnvironment(file_name="./Banana_Windows_x86_64/Banana.exe")
 ```
 
-3. Run the `Navigation_Project.ipynb` notebook to either train the DQN agent from scratch or use the already trained model weights in the file `model.pth`.
+4. Run the `Navigation_Project.ipynb` notebook to either train the DQN agent from scratch or use the already trained model weights in the file `model.pth`.
 
-4. You can see how trained agent move in environment by running the last cell in the notebook.
+5. You can see how trained agent move in environment by running the last cell in the notebook.
