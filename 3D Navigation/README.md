@@ -23,12 +23,11 @@ The task is episodic, and in order to solve the environment, your agent must get
 
 1. Prepare new Conda environment (with python 3.6) following guidelines on [Udacity DRL repo](https://github.com/udacity/deep-reinforcement-learning#dependencies) 
 
-:warning: You may encounter PyTorch installation issues on Windows 10. Looks like required version of PyTorch must be installed using conda: `conda install pytorch=0.4.0 -c pytorch` before running `pip install` in Point 3.
 
-2. Install the `mlagents` package with:
+2. Install the `unityagents` package with:
 
 ```sh
-python -m pip install mlagents==0.28.0
+pip install unityagents==0.4.0
 ```
 
 3. Download custom Banana environment (Unity ML-Agents env) prepared by Udacity
