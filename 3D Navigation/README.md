@@ -46,6 +46,6 @@ For example on 64-bit Windows:
 env = UnityEnvironment(file_name="./Banana_Windows_x86_64/Banana.exe")
 ```
 
-4. Run the `Navigation_Project.ipynb` notebook to either train the DQN agent from scratch or use the already trained model weights in the file `model.pth`.
+4. Run the `Navigation_Project.ipynb` notebook to either train the DQN agent from scratch or use the already trained model weights in the file `checkpoint.pth`.
 
 5. You can see how trained agent move in environment by running the last cell in the notebook.
